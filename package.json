@@ -2,13 +2,22 @@
   "name": "lab_build-express-application",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.mjs",
+    "dev": "nodemon server.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
