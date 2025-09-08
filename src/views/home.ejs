@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= pageTitle || "Home" %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/contact">Contact</a>
+    <a href="/greet/Aminata">Greet (param)</a>
+  </nav>
+
+  <h1>Welcome 👋</h1>
+  <p><%= description || "Express lab demo." %></p>
+
+  <section>
+    <h2>What this app demonstrates</h2>
+    <ul>
+      <li>Express app with EJS view engine</li>
+      <li>Route parameters (<code>/greet/:name</code>)</li>
+      <li>Middleware (morgan, JSON/form parsers, global error)</li>
+      <li>Static files for CSS</li>
+      <li>Form POST handling (<code>/contact</code>)</li>
+    </ul>
+  </section>
+</body>
+</html>

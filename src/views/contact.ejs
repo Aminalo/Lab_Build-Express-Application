@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= pageTitle || "Contact" %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/contact">Contact</a>
+    <a href="/greet/Aminata">Greet (param)</a>
+  </nav>
+
+  <h1>Contact</h1>
+  <form method="POST" action="/contact">
+    <label>Name<br/><input name="name" required /></label>
+    <label>Email<br/><input type="email" name="email" required /></label>
+    <label>Message<br/><textarea name="message" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Send</button>
+  </form>
+</body>
+</html>
